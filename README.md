@@ -1,8 +1,11 @@
 # Deploy
-sudo nvidia-docker run -it -p 5000:5000 yourname/pytorch:yourtag
+```sh
+sudo nvidia-docker run -it -p 5000:5000 yourname/pytorch:yourtag 
 cd Deploy
 python app2.py
-
+```
+   
+```python
 client example:
 
 import requests
@@ -26,3 +29,4 @@ pred=predict_result('./2.jpg')
 elapsed = (time.time() - start)
 print(elapsed)
 #print(pred)
+```
