@@ -1,5 +1,5 @@
 # Deploy
-sudo nvidia-docker run -it -p 5000:5000 twohat/pytorch:multidense
+sudo nvidia-docker run -it -p 5000:5000 yourname/pytorch:yourtag
 cd Deploy
 python app2.py
 
@@ -21,8 +21,8 @@ def predict_result(image_path):
     print(r)
     return r
 
-start = time.clock()
+start = time.time()
 pred=predict_result('./2.jpg')
-elapsed = (time.clock() - start)
+elapsed = (time.time() - start)
 print(elapsed)
 #print(pred)
